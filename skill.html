@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Skill</title>
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/skill.css">
+
+</head>
+<body>
+    <section class="wrapper">
+        <header class="header">
+            <div class="container header-container">
+                <div class="contents">
+                    <h1 class="logo">
+                        <a href="./home.html"><span>강민우의</span> 포트폴리오</a>
+                    </h1>
+                </div>
+            </div>
+        </header>
+    <div class="section skill" id="skill">
+        <div class="container skill-container">
+            <figure class="back-images">
+                <img src="./images/skill-01.png" alt="배경">
+            </figure>
+                <h2 class="tlt">SKILLS</h2>
+            <div class="contents">
+                <article class="ps">
+                    <div class="img-box">
+                        <img src="./images/ps.png" alt="포토샵이미지">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        photoshop
+                    </h3>
+                    <div>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                </article>
+                <article class="il">
+                    <div class="img-box">
+                        <img src="./images/il.png" alt="일러스트레이터이미지">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        Illustrator
+                    </h3>
+                    <div>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                </article>
+                <article class="af">
+                    <div class="img-box">
+                        <img src="./images/af.png" alt="에프터이펙트">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        After Effects
+                    </h3>
+                    <div>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                </article>
+                <article class="pp">
+                    <div class="img-box">
+                        <img src="./images/pp.png" alt="프리미어 프로">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        Premiere Pro
+                    </h3>
+                    <div>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                </article>
+                <article class="HTML5">
+                    <div class="img-box">
+                        <img src="./images/html.png" alt="HTML5">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        HTML5
+                    </h3>
+                    <div>
+                        <progress value="20" max="100">20%</progress>
+                    </div>
+                </article>
+                <article class="css">
+                    <div class="img-box">
+                        <img src="./images/css.png" alt="CSS">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        CSS3
+                    </h3>
+                    <div>
+                        <progress value="0" max="100" id="css"></progress>
+                        <div class="box" id="css-value">0</div>
+                    </div>
+                </article>
+                <article class="js">
+                    <div class="img-box">
+                        <img src="./images/js.png" alt="자바스크립트">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        java Script
+                    </h3>
+                    <div>
+                        <div id="container"></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script>
+        let css = 50;
+        let cnt = 0;
+
+        $('.css').mouseenter(function(){
+             let rep = setInterval(function(){
+                $('#css').attr('value',cnt++);
+                $('#css-value').text(cnt + '%');
+                if(cnt>=css){
+                    clearInterval(rep);
+                }
+            },20);
+        })
+       
+
+
+
+
+
+
+           
+           
+        
+
+    </script>
+</body>
+</html>
