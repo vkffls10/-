@@ -8,20 +8,18 @@
 /* .skill .contents{position:absolute; width: 80%; left:50%; top:30%; transform: translate(-50%,-50%); display: flex;} */
 
 .ps{position:absolute; width: 20%; left:23%; top:30%; transform: translate(-50%,-50%); display: flexbox;}
-.il{position:absolute; width: 20%; left:43%; top:30%; transform: translate(-50%,-50%); display: flexbox;}
+.ai{position:absolute; width: 20%; left:43%; top:30%; transform: translate(-50%,-50%); display: flexbox;}
 .af{position:absolute; width: 20%; left:63%; top:30%; transform: translate(-50%,-50%); display: flexbox;}
 .pp{position:absolute; width: 20%; left:83%; top:30%; transform: translate(-50%,-50%); display: flexbox;}
-.HTML5{position: absolute; width: 20%; left: 30%; top:50%;transform: translate(-40%,-40%); display:flexbox;}
+.html{position: absolute; width: 20%; left: 30%; top:50%;transform: translate(-40%,-40%); display:flexbox;}
 .css{position: absolute; width: 20%; left: 50%; top:50%;transform: translate(-40%,-40%); display:flexbox;}
 .js{position: absolute; width: 20%; left: 70%; top:50%;transform: translate(-40%,-40%); display:flexbox;}
-
-#container {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    position: relative;
-  }
 
 /* .article{width:46.875%;margin-bottom:36px;}            */
 .img-box{margin-bottom:14px;text-align:center;}
 .img-box{width:60%;}
+
+
+.nav{display:flex; padding:16px 20px; font-size:18px;color:#fff;position:absolute;left:80%; top:10;z-index:10;order:3;}
+.nav ul{display:flex;justify-content:space-between;}
+.btn-nav{width:20.3125%;color:#000;text-align:right;order:4;}
