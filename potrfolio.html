@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./css/reset.css">
+    <!-- 외부 플러그인 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- 외부 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
     <title>POTRFOLIO</title>
 
     <link rel="stylesheet" href="./css/header.css">
@@ -15,6 +18,12 @@
 
 </head>
 <body>
+    <div class="pop-up" id="pop-up">
+        <div class="container">
+            <video src="./video/강민우-CU 편의점 광고01.mp4" autoplay loop controls></video>
+            <i id="btn-04" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
     <section class="wrapper">
         <header class="header">
             <div class="container header-container">
@@ -58,8 +67,20 @@
                 </div>
                 <div class="txt-box03">
                     <h3 class="sub-tit03">CU</h3>
-                    <p class="btn-03"><a href="./video/강민우-CU 편의점 광고.mp4" target="_black">동영상팝업창</a></p>
-                </div>
-        </section>           
+                    <p class="btn-03" style="cursor:pointer"><a id="btn-03">동영상팝업창</a></p>
+        </section>
+        <script>
+            $(function(){
+                $('#btn-03').on({
+                'click':function(){
+                    $('#pop-up').fadeIn();
+                }
+            })
+            $('#btn-04').click(function(){
+                $('#pop-up').fadeOut();
+            })
+        })
+        </script>
+
 </body>
 </html>

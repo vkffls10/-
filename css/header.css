@@ -6,3 +6,6 @@
 .logo{width:73%;font-weight:700;font-size:36px;order:2;}
 .logo span{display:contents}
 
+.nav{display:block;padding:16px 20px;position:absolute;left:80%;right:0;top:20%;z-index:10;}
+.nav ul{display:flex;justify-content:space-between;}
+.nav{font-size:25px; font-family:cursive; text-shadow:white 1px 0 10px;}
