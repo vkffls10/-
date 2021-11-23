@@ -8,7 +8,7 @@ figcaption,article,::before,::after{
     margin:0;
     border:none;
     padding:0;
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 img{
     vertical-align:bottom;

@@ -10,13 +10,25 @@
 .img-box03{position:absolute; width: 20%; left:80%; top:50%; transform: translate(-50%,-50%); display: flex;z-index: 1;}
 
 
-.txt-box{position:absolute; width: 15%; height: 15%; left:20%; top:75%; transform: translate(-50%,-50%); display: flex;z-index: 3;}
-.sub-tit{position:absolute; left:23.5%; top: -5%;}
-.btn-01{position:absolute; width: 210px; height: 40px; left:5%; top: 40%; background-color: black;}
+.txt-box01{position:absolute; width: 15%; height: 15%; left:20%; top:75%; transform: translate(-50%,-50%); display: flex;z-index: 3;}
+.sub-tit01{position:absolute; left:29%; top: -5%;}
+.btn-01{position:absolute; width: 210px; height: 40px; left:14%; top: 40%; background-color: black;}
 
-.sub-tit{font-size: 25px; color: white;}
+.txt-box02{position:absolute; width: 15%; height: 15%; left:50%; top:75%; transform: translate(-50%,-50%); display: flex;z-index: 3;}
+.sub-tit02{position:absolute; left:35%; top: -5%;}
+.btn-02{position:absolute; width: 210px; height: 40px; left:15.5%; top: 40%; background-color: black;}
+
+.txt-box03{position:absolute; width: 15%; height: 15%; left:80%; top:75%; transform: translate(-50%,-50%); display: flex;z-index: 3;}
+.sub-tit03{position:absolute; left:45%; top: -5%;}
+.btn-03{position:absolute; width: 180px; height: 40px; left:20%; top: 40%; background-color: black;}
+
+.sub-tit01{font-size: 25px; color: white;}
+.sub-tit02{font-size: 25px; color: white;}
+.sub-tit03{font-size: 25px; color: white;}
+
 .btn-01{font-size: 30px;}
-.a{position: absolute; bottom: 20px;}
+.btn-02{font-size: 30px;}
+.btn-03{font-size: 30px;}
 
 
 
@@ -25,6 +37,7 @@
 
 
 
-.nav{display:flex; padding:16px 20px; font-size:18px;color:#fff;position:absolute;left:80%; top:10;z-index:10;order:3;}
+
+/* .nav{display:flex; padding:16px 20px; font-size:18px;color:#fff;position:absolute;left:80%; top:10;z-index:10;order:3;}
 .nav ul{display:flex;justify-content:space-between;}
-.btn-nav{width:20.3125%;color:#000;text-align:right;order:4;}
+.btn-nav{width:20.3125%;color:#000;text-align:right;order:4;} */
