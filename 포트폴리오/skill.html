@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Skill</title>
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/skill.css">
+
+
+</head>
+<body>
+    <section class="wrapper">
+        <header class="header">
+            <div class="container header-container">
+                <div class="contents">
+                    <h1 class="logo">
+                        <a><span>강민우의</span> 포트폴리오</a>
+                    </h1>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./I.html">I</a></li>
+                            <li><a href="./skill.html">Skill</a></li>
+                            <li><a href="./potrfolio.html">PotrFolio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    <div class="section skill" id="skill">
+        <div class="container skill-container">
+            <figure class="back-images">
+                <img src="./images/skill-01.png" alt="배경">
+            </figure>
+                <h2 class="tlt">SKILLS</h2>
+            <div class="contents">
+                <article class="skil01 ps">
+                    <div class="img-box">
+                        <img src="./images/ps.png" alt="포토샵이미지">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        photoshop
+                    </h3>
+                    <progress value="0" max="100" id="ps"></progress>
+                    <div class="box" id="ps-value">0%</div>
+                </article>
+                <article class="skil01 ai">
+                    <div class="img-box">
+                        <img src="./images/il.png" alt="일러스트레이터이미지">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        Illustrator
+                    </h3>
+                    <progress value="0" max="100" id="ai"></progress>
+                    <div class="box" id="il-value">0%</div>
+                </article>
+                <article class="skil01 af">
+                    <div class="img-box">
+                        <img src="./images/af.png" alt="에프터이펙트">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        After Effects
+                    </h3>
+                    <progress value="0" max="100" id="af"></progress>
+                    <div class="box" id="af-value">0%</div>
+                </article>
+                <article class="skil01 pp">
+                    <div class="img-box">
+                        <img src="./images/pp.png" alt="프리미어 프로">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        Premiere Pro
+                    </h3>
+                    <progress value="0" max="100" id="pp"></progress>
+                    <div class="box" id="pp-value">0%</div>
+                </article>
+                <article class="skil01 html">
+                    <div class="img-box">
+                        <img src="./images/html.png" alt="HTML">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        HTML5
+                    </h3>
+                    <progress value="0" max="100" id="html"></progress>
+                    <div class="box" id="html-value">0%</div>
+                </article>
+                <article class="skil01 css">
+                    <div class="img-box">
+                        <img src="./images/css.png" alt="CSS">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        CSS3
+                    </h3>
+                    <div>
+                        <progress value="0" max="100" id="css"></progress>
+                        <div class="box" id="css-value">0%</div>
+                    </div>
+                </article>
+                <article class="skil01 js">
+                    <div class="img-box">
+                        <img src="./images/js.png" alt="자바스크립트">
+                    </div>
+                    <h3 class="sub-tlt" data-aos="fade-left">
+                        java Script
+                    </h3>
+                    <progress value="0" max="100" id="javas"></progress>
+                    <div class="box" id="javas-value">0%</div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script>
+let ps = 40;
+let ai = 50;
+let af = 45;
+let pp = 56;
+let html = 60;
+let css = 49;
+let js = 20;
+let rep;
+
+$('.skil01').mouseenter(function(){
+    let cnt = 0;
+    if($(this).hasClass('ps')){
+        if(cnt== ps){
+            false
+        }else{
+        rep = setInterval(function(){
+            $('.ps progress').attr('value',cnt++);
+            $('.ps .box').text(cnt + '%');
+            if(cnt>=ps){
+                clearInterval(rep);
+            }
+        },20);
+        }
+    }else if($(this).hasClass('ai')){       
+        if(cnt== ai){
+            false
+        }else{
+         rep = setInterval(function(){
+            $('.ai progress').attr('value',cnt++);
+            $('.ai .box').text(cnt + '%');
+            if(cnt>=ai){
+                clearInterval(rep);
+            }
+        },20);
+        }
+    }else if($(this).hasClass('af')){
+        if(cnt== af){
+            false
+        }else{
+         rep = setInterval(function(){
+            $('.af progress').attr('value',cnt++);
+            $('.af .box').text(cnt + '%');
+            if(cnt>=af){
+                clearInterval(rep);
+            }
+        },20);
+        }        
+    }else if($(this).hasClass('pp')){
+        if(cnt== pp){
+            false
+        }else{
+         rep = setInterval(function(){
+            $('.pp progress').attr('value',cnt++);
+            $('.pp .box').text(cnt + '%');
+            if(cnt>=pp){
+                clearInterval(rep);
+            }
+        },20);
+        }
+    }else if($(this).hasClass('html')){
+        if(cnt== html){
+            false
+        }else{
+         rep = setInterval(function(){
+            $('.html progress').attr('value',cnt++);
+            $('.html .box').text(cnt + '%');
+            if(cnt>=html){
+                clearInterval(rep);
+            }
+        },20);
+        }
+    }else if($(this).hasClass('css')){
+        if(cnt== css){
+            false
+        }else{
+         rep = setInterval(function(){
+            $('.css progress').attr('value',cnt++);
+            $('.css .box').text(cnt + '%');
+            if(cnt>=css){
+                clearInterval(rep);
+            }
+        },20);
+        }
+    }else if($(this).hasClass('js')){
+        if(cnt== js){
+            false
+        }else{
+         rep = setInterval(function(){
+            $('.js progress').attr('value',cnt++);
+            $('.js .box').text(cnt + '%');
+            if(cnt>=js){
+                clsRep(rep);
+            }
+        },20);
+        }
+    }
+})
+
+function clsRep(rep){
+     clearInterval(rep);
+}
+
+
+$('.skil01').mouseleave(function(){
+    clsRep(rep);
+    let cnt = 0;
+    if($(this).hasClass('ps')){
+        $('.ps progress').attr('value',0);
+        $('.ps .box').text(0 + '%');
+    }else if($(this).hasClass('ai')){       
+        $('.ai progress').attr('value',0);
+        $('.ai .box').text(0 + '%');
+    }else if($(this).hasClass('af')){
+        $('.af progress').attr('value',0);
+        $('.af .box').text(0 + '%');      
+    }else if($(this).hasClass('pp')){
+        $('.pp progress').attr('value',0);
+        $('.pp .box').text(0 + '%');
+    }else if($(this).hasClass('html')){
+        $('.html progress').attr('value',0);
+        $('.html .box').text(0 + '%');
+    }else if($(this).hasClass('css')){
+        $('.css progress').attr('value',0);
+        $('.css .box').text(0 + '%');
+    }else if($(this).hasClass('js')){
+        $('.js progress').attr('value',0);
+        $('.js .box').text(0 + '%');
+    }
+})
+
+    </script>
+
+
+</body>
+</html>
